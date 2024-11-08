@@ -2,6 +2,8 @@
 
 pub mod errors;
 
+pub mod config;
+
 // constants
 
 pub mod env_vars {

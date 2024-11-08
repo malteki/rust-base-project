@@ -11,6 +11,8 @@ tracing = "*"
 tracing-subscriber = "*"
 
 tokio = { version = "*", features = ["full"] }
+serde = { version = "1.0.214", features = ["derive"] }
+toml = "0.8.19"
 
 # build optimizations
 
