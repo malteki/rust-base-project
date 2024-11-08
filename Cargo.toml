@@ -4,15 +4,17 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-anyhow = "*"
-thiserror = "*"
+tokio = { version = "1", features = ["full"] }
 
 tracing = "*"
 tracing-subscriber = "*"
 
-tokio = { version = "*", features = ["full"] }
-serde = { version = "1.0.214", features = ["derive"] }
-toml = "0.8.19"
+anyhow = "1"
+thiserror = "2"
+
+serde = { version = "1", features = ["derive"] }
+toml = "*"
+dirs = "5"
 
 # build optimizations
 
