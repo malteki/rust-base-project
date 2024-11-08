@@ -1,0 +1,27 @@
+[package]
+name = "aet-base"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "*"
+thiserror = "*"
+
+tracing = "*"
+tracing-subscriber = "*"
+
+tokio = { version = "*", features = ["full"] }
+
+# build optimizations
+
+[profile.dev]
+codegen-units = 20
+opt-level = 1
+lto = "off"
+incremental = true
+
+[profile.release]
+codegen-units = 1
+opt-level = 3
+lto = "fat"
+incremental = true
